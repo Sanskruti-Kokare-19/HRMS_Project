@@ -64,7 +64,8 @@
                            </a>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link  active" href="../pages/tables.html">
+                           <asp:HyperLink ID="HyperLink2" runat="server" class="nav-link  active" NavigateUrl="~/AdminHome.aspx">
+                           
                                <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                                    <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                        <title>office</title>
@@ -81,10 +82,11 @@
                                    </svg>
                                </div>
                                <span class="nav-link-text ms-1">Tables</span>
-                           </a>
+                            </asp:HyperLink>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link  " href="../pages/billing.html">
+                           <asp:HyperLink ID="HyperLink1" runat="server" class="nav-link" NavigateUrl="PerformanceAdmin.aspx">
+                           <%--<a  " href="../pages/billing.html">--%>
                                <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                                    <svg width="12px" height="12px" viewBox="0 0 43 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                        <title>credit-card</title>
@@ -100,11 +102,14 @@
                                        </g>
                                    </svg>
                                </div>
-                               <span class="nav-link-text ms-1">Billing</span>
-                           </a>
+                               <span class="nav-link-text ms-1">Performance</span>
+                          <%-- </a>--%>
+
+                           </asp:HyperLink>
                        </li>
                        <li class="nav-item">
-                           <a class="nav-link  " href="../pages/virtual-reality.html">
+                           <asp:HyperLink ID="HyperLink3" runat="server" class="nav-link" NavigateUrl="~/ViewPerformance.aspx">
+                           <%--<a   " href="../pages/virtual-reality.html">--%>
                                <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
                                    <svg width="12px" height="12px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                        <title>box-3d-50</title>
@@ -121,8 +126,9 @@
                                        </g>
                                    </svg>
                                </div>
-                               <span class="nav-link-text ms-1">Virtual Reality</span>
-                           </a>
+                               <span class="nav-link-text ms-1">ViewPerformance</span>
+                           <%--</a>--%>
+                        </asp:HyperLink>
                        </li>
                        <li class="nav-item">
                            <a class="nav-link  " href="../pages/rtl.html">

@@ -35,6 +35,7 @@ namespace HrmsTeam2
                     string dbHashPassword = reader["PasswordHash"].ToString();
                     string uRole = reader["UserRole"].ToString();
                     string userStatus = reader["UserStatus"].ToString();
+                    int userId = int.Parse(reader["UserId"].ToString());
 
                     // Check if user is active
                     if (userStatus != "Active")
@@ -46,7 +47,9 @@ namespace HrmsTeam2
                     if (VerifyPassword(pass, dbHashPassword))
                     {
                         Session["MyUser"] = email;
-                        if(uRole == "User")
+                        Session["UserId"] = userId;    // Store UserID in session
+                        Session["UserRole"] = uRole;
+                        if (uRole == "User")
                         {
                             Response.Redirect("UserHome.aspx");
                         }

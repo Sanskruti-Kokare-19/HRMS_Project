@@ -186,8 +186,12 @@
     <Content Include="pages\sign-up.html" />
     <Content Include="pages\tables.html" />
     <Content Include="pages\virtual-reality.html" />
+    <Content Include="PerformanceAdmin.aspx" />
+    <Content Include="PerformanceUser.aspx" />
     <Content Include="SignIn.aspx" />
     <Content Include="SignUp.aspx" />
+    <Content Include="UserHome.aspx" />
+    <Content Include="ViewPerformance.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -204,6 +208,20 @@
     </Compile>
     <Compile Include="AdminHome.aspx.designer.cs">
       <DependentUpon>AdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceAdmin.aspx.cs">
+      <DependentUpon>PerformanceAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerformanceAdmin.aspx.designer.cs">
+      <DependentUpon>PerformanceAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerformanceUser.aspx.cs">
+      <DependentUpon>PerformanceUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerformanceUser.aspx.designer.cs">
+      <DependentUpon>PerformanceUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SignIn.aspx.cs">
@@ -226,6 +244,20 @@
     </Compile>
     <Compile Include="User.Master.designer.cs">
       <DependentUpon>User.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.aspx.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserHome.aspx.designer.cs">
+      <DependentUpon>UserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPerformance.aspx.cs">
+      <DependentUpon>ViewPerformance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewPerformance.aspx.designer.cs">
+      <DependentUpon>ViewPerformance.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
